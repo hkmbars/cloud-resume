@@ -1,0 +1,24 @@
+# github action that is responsible to upload our new website content 
+# as we push it to github repository to S3
+
+name : Upload website to S3  #can name whatever you want
+
+on:                     #when does it trigger
+    push:
+        branches:
+        - main           #triggered when there is a push on the main branch
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@master
+        - uses: jakejarvis/s3-sync-action@master
+          with:
+                args: --acl public-read --follow-symlinks --delete
+        env:
+            AWS_S3_BUCKET: cloud-resume-hkmmb
+            AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            AWS_REGION: ap-southeast-1
+            SOURCE: MyResume
