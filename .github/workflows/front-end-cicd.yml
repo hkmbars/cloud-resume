@@ -13,6 +13,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@v3 #Replace with the latest stable version
+        - run: mv MyResume-1.0.0/* .
         - uses: jakejarvis/s3-sync-action@master        #Sync website to S3
           with:
                 args: --acl private --follow-symlinks --delete
@@ -21,6 +22,6 @@ jobs:
             AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
             AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             AWS_REGION: ap-southeast-1
-            SOURCE: ./MyResume-1.0.0    #uploads only the files inside MyResume-1.0.0,
+            SOURCE: .                   #uploads only the files inside MyResume-1.0.0,
                                         #without including the MyResume-1.0.0 folder itself
         
