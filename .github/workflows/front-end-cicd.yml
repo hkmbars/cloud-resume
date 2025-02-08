@@ -1,3 +1,4 @@
+
 # github action that is responsible to upload our new website content 
 # as we push it to github repository to S3
 
@@ -12,8 +13,8 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@master #Replace with the latest stable version
-        - uses: jakejarvis/s3-sync-action@master        #Sync website to S3
+        - uses: actions/checkout@master
+        - uses: jakejarvis/s3-sync-action@master
           with:
                 args: --acl private --follow-symlinks --delete
         env:
@@ -21,6 +22,4 @@ jobs:
             AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
             AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             AWS_REGION: ap-southeast-1
-            SOURCE: MyResume-1.0.0     #uploads only the files inside MyResume-1.0.0,
-                                        #without including the MyResume-1.0.0 folder itself
-        
+            SOURCE: MyResume-1.0.0
