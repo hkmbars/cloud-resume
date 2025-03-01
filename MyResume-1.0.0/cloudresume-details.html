@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Cloud Resume</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-hdd-stack navicon"></i><span>Projects</span></a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Cloud Resume Challenge</li>
+          </ol>
+        </nav>
+        <h1>Building My Cloud Resume Challenge: A Hands-On Learning Journey</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <img src="assets/img/Projects_img/resume_architecture.jpg" class="img-fluid" alt="">
+
+          <div data-aos="fade-up">
+            <div class="portfolio-description">
+              <h5><b>How It Started</b></h5>
+                <p>
+                  After graduating from the AWS re/Start program and earning my AWS Certified Cloud Practitioner certification, 
+                  I started applying for jobs. During one interview, I was asked, <i>"What cloud projects have you done?"</i> I froze. 
+                  Up until that point, I had felt confident in my answers, but I hadn’t anticipated this question.
+                </p>
+                <p>
+                  I had been practicing cloud exercises, but I wasn’t sure if they counted as actual projects. 
+                  After the interview, I researched cloud projects that could help me develop my skills further. 
+                  The <i><a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a></i> 
+                  was the most recommended, so I decided to take it on.
+                </p>
+              <h5><b>Navigating the Challenge</b></h5>
+                <p>
+                  To complete the challenge, I relied on numerous blog posts, YouTube videos, countless Google searches, and ChatGPT prompts. 
+                  I even took the time to study the basics of Python and Terraform. At times, it felt overwhelming. 
+                  Despite following clear instructions, I still encountered challenges—but that’s where the real learning happened.
+                </p>
+                <p>
+                  Troubleshooting issues and finding solutions deepened my understanding of cloud technologies, 
+                  reinforcing that hands-on experience is the best way to grow.
+                </p>
+                  <p><i>
+                    Note: This blog provides an overview of the key steps I took rather than a detailed, step-by-step guide. 
+                    I also created a separate personal documentation with an in-depth process, including explanations of each configuration, 
+                    for my own reference and learning.
+                  </i></p>
+              <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <h2>Frontend</h2>
+              </div>
+              <h4><b>Hosting a Static Website with a Custom Domain</b></h4>
+                <div class="detail-indent">
+                  <h5><b>Website Development</b></h5>
+                    <p>
+                      I started by looking up HTML5 templates online and customizing one to fit my content. 
+                      Initially, I created a draft and later refined it after completing the Cloud Resume Challenge, 
+                      ensuring that the final version aligned with my technical implementation.
+                    </p>
+                  <h5><b>Configuring S3 and CloudFront</b></h5>
+                    <p>
+                      To host my static website, I:
+                        <ul>
+                          <li>Created an S3 bucket to store my website files</li>
+                          <li>Blocked public access for security</li>
+                          <li>Disabled static website hosting since CloudFront would handle content delivery</li>
+                        </ul>
+                    </p>
+                    <p>
+                      Instead of serving the website directly from S3, I used CloudFront, which fetches objects from the bucket. 
+                      This approach improves security and performance.
+                    </p>
+
+                    <h5><b>Setting Up a Custom Domain</b></h5>
+                    <p>
+                      I registered a domain and configured the necessary DNS records. 
+                      Instead of using Route 53, I opted for Hostinger since it offered a better deal for <i>hkmmb.cloud</i>.
+                    </p>
+                    <p>
+                      After setting up a CloudFront distribution, I:
+                        <ul>
+                          <li>Assigned a custom domain</li>
+                          <li>Requested an SSL certificate via AWS Certificate Manager (ACM)</li>
+                          <li>Manually updated the DNS records in Hostinger to complete domain validation</li>
+                        </ul>
+                    </p>
+                    <p>
+                      This step was especially valuable, as it enhanced my understanding of DNS records and validation processes. 
+                      Once the certificate was issued, I linked it to CloudFront to enable HTTPS, ensuring secure access to my static website.
+                    </p>
+                </div>
+
+                  <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                    <h2>Backend</h2>
+                  </div>
+                  <h4><b>Implementing a Page View Counter</b></h4>
+                  <p>To track website visits, I needed a database and an API to fetch visitor counts.</p>
+                  <div class="detail-indent"> 
+                    <h5><b>Database & API Setup</b></h5>
+                    <p>I first set up a DynamoDB table to store the view count data, then created a Lambda function to interact with the database.</p>
+                    <p>
+                      Rather than fetching data directly from DynamoDB, I:
+                        <ul>
+                          <li>Developed a Lambda function to handle data retrieval</li>
+                          <li>Used Lambda Function URLs to expose it as an API with a dedicated HTTP(S) endpoint</li>
+                          <li>Enabled CORS (Cross-Origin Resource Sharing) to restrict access to my website only</li>
+                        </ul>
+                    </p>
+                    <p>
+                      Retrieve and Display the View Count
+                        <ul>
+                          <li>Wrote Python code in the Lambda function to query DynamoDB</li>
+                          <li>Created a JavaScript code to call the Lambda API and retrieve the visitor count</li>
+                          <li>Integrated the JavaScript code into my HTML to dynamically update the website</li>
+                        </ul>
+                        <p>This setup ensures that my frontend does not interact directly with the database, improving security and scalability.</p>
+                    </p>
+                  </div>
+            
+                  <h4><b>Automating Website Deployment with GitHub Actions</b></h4>
+                  <p>To streamline deployment, I created a GitHub repository for my website files and set up a CI/CD pipeline using GitHub Actions.</p>
+                  <div class="detail-indent"> 
+                    <h5><b>How the Workflow Works</b></h5>
+                        <ul>
+                          <li>Trigger: The workflow runs whenever a push is made to the main branch</li>
+                          <li>Fetches Code: Uses actions/checkout to retrieve the latest repository changes</li>
+                          <li>Syncs with S3: Uses jakejarvis/s3-sync-action to update the website directory in the S3 bucket</li>
+                        </ul>
+                        <h5><b>Ensuring Secure Deployments</b></h5>
+                        <p>Rather than hard-coding AWS credentials in my YAML file, I used GitHub Secrets to store:</p>
+                        <ul>
+                          <li>S3 Bucket Name</li>
+                          <li>AWS Access Key ID</li>
+                          <li>AWS Secret Access Key</li>
+                        </ul>
+                        <p>With this setup, each code update automatically deploys to my S3 bucket, ensuring the latest version is updated without manual intervention.</p>
+                  </div>
+                  <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                    <h2>Next Steps & Reflections</h2>
+                  </div>
+                  <p>Although I successfully completed the challenge, I see opportunities for further improvements. 
+                    One enhancement I plan to implement is integrating AWS Lambda with SES to add email functionality. 
+                    Additionally, I want to deepen my studies for the AWS Solutions Architect – Associate (SAA) certification.</p>
+                  <p>This challenge reinforced that there’s no single way to solve a problem, there are multiple approaches, 
+                    each with trade-offs. Completing this project gave me a strong sense of accomplishment, highlighting how much I’ve learned and how much more there is to explore.</p>
+                  <p>I hope this inspires others to take on the Cloud Resume Challenge and embark on their own cloud learning journey. Thank you for taking the time to read!</p>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h1 class="sitename">Cloud Resume Challenge</h1>
+      <p>A self-learning cloud hands on experience.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/hankimaebars"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/hankimaebars/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/hkmbaron/"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Hannah</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

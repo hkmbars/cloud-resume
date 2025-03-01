@@ -167,6 +167,7 @@ h6 {
 @media (min-width: 1200px) and (max-width: 1600px) {
   .header~main {
     margin-left: 160px;
+    margin-right: 160px
   }
 
   .header~main .hero {
@@ -461,7 +462,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: clip;
 }
 
@@ -847,6 +848,11 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+.detail-indent {
+  margin-left: 30px;
+}
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -948,6 +954,10 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.isotope-layout {
+  box-sizing: content-box;
+}
+
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
